@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Land of Hope Ch. 16-17 Study Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1510;--paper:#f5f0e8;--aged:#e8dfc8;--sepia:#b5933a;--rust:#8b3a1e;--slate:#3a4a5c;--faded:#8a7d6b;--green:#2d5a3d;--red:#7a2020;--card-bg:#faf6ee;--shadow:rgba(26,21,16,0.15)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Source Serif 4",Georgia,serif;background:var(--paper);color:var(--ink);min-height:100vh}
+header{background:var(--ink);color:var(--paper);padding:2.5rem 2rem 2rem;text-align:center}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--sepia);margin-bottom:.75rem}
+header h1{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:900;line-height:1.15;margin-bottom:.5rem}
+.hsub{font-style:italic;color:#b0a898;font-size:1rem;font-weight:300}
+nav{background:var(--ink);border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:center;position:sticky;top:0;z-index:100;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav::-webkit-scrollbar{display:none}
+.tab-btn{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#7a6e60;background:none;border:none;padding:.85rem 1.2rem;cursor:pointer;transition:all .2s;border-bottom:2px solid transparent;white-space:nowrap;flex-shrink:0}
+.tab-btn:hover{color:var(--paper)}.tab-btn.active{color:var(--sepia);border-bottom-color:var(--sepia)}
+main{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.view{display:none}.view.active{display:block}
+
+/* ---- REVIEW (bullet points) ---- */
+.ch-hdr{font-family:"Playfair Display",serif;font-size:1.4rem;font-weight:700;color:var(--rust);margin:2rem 0 .5rem;padding-bottom:.4rem;border-bottom:2px solid var(--aged);display:flex;align-items:baseline;gap:.75rem}
+.ch-hdr span{font-family:"JetBrains Mono",monospace;font-size:.65rem;letter-spacing:.2em;color:var(--faded);text-transform:uppercase;font-weight:400}
+.sec-hdr{font-family:"Playfair Display",serif;font-size:1rem;font-weight:700;color:var(--slate);margin:1.4rem 0 .5rem;border-left:3px solid var(--sepia);padding-left:.6rem}
+.bul-list{list-style:none;margin:0 0 .5rem 0;padding:0}
+.bul-list li{font-size:.88rem;line-height:1.55;color:#2a2018;padding:.2rem 0 .2rem 1.2rem;position:relative;border-bottom:1px solid rgba(232,223,200,.5)}
+.bul-list li:last-child{border-bottom:none}
+.bul-list li::before{content:"–";position:absolute;left:0;color:var(--sepia);font-weight:700}
+.bul-list li strong{color:var(--ink);font-weight:600}
+.pq{border-left:4px solid var(--sepia);background:rgba(181,147,58,.07);padding:.85rem 1.1rem;margin:1.25rem 0;border-radius:0 4px 4px 0}
+.pq p{font-style:italic;font-size:.88rem;line-height:1.6;color:#2a2018}
+.pq cite{display:block;font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.1em;color:var(--faded);margin-top:.4rem;text-transform:uppercase;font-style:normal}
+
+/* ---- ANSWER KEY (cards) ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:.85rem;margin-bottom:1rem}
+.card{background:var(--card-bg);border:1px solid var(--aged);border-radius:4px;padding:.9rem 1rem;position:relative;box-shadow:2px 3px 8px var(--shadow)}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:4px 0 0 4px}
+.card.person::before{background:var(--rust)}.card.event::before{background:var(--slate)}.card.concept::before{background:var(--sepia)}.card.program::before{background:var(--green)}
+.clabel{font-family:"JetBrains Mono",monospace;font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.25rem}
+.card.person .clabel{color:var(--rust)}.card.event .clabel{color:var(--slate)}.card.concept .clabel{color:var(--sepia)}.card.program .clabel{color:var(--green)}
+.cname{font-family:"Playfair Display",serif;font-size:.95rem;font-weight:700;margin-bottom:.3rem}
+.cdesc{font-size:.82rem;line-height:1.5;color:#3a3028}
+
+/* ---- FLASHCARDS ---- */
+#fv{max-width:700px;margin:0 auto}
+.fc-ctrl{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem}
+.fc-cats{display:flex;gap:.4rem;flex-wrap:wrap}
+.cat-btn{font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .7rem;border:1px solid var(--aged);background:transparent;cursor:pointer;border-radius:2px;color:var(--faded);transition:all .15s}
+.cat-btn.active,.cat-btn:hover{background:var(--ink);color:var(--sepia);border-color:var(--ink)}
+.fc-prog{font-family:"JetBrains Mono",monospace;font-size:.7rem;color:var(--faded)}
+.fc-wrap{perspective:1000px;height:280px;cursor:pointer;margin-bottom:1.25rem}
+.fc{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.fc.flipped{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;box-shadow:0 4px 20px var(--shadow)}
+.fc-front{background:var(--ink);color:var(--paper);border:2px solid #2a2218}
+.fc-back{background:var(--card-bg);color:var(--ink);border:2px solid var(--aged);transform:rotateY(180deg)}
+.fc-type{font-family:"JetBrains Mono",monospace;font-size:.58rem;letter-spacing:.25em;text-transform:uppercase;color:var(--sepia);margin-bottom:.75rem}
+.fc-front .fc-type{color:#7a6e5a}
+.fc-term{font-family:"Playfair Display",serif;font-size:clamp(1.1rem,3vw,1.5rem);font-weight:700;line-height:1.3}
+.fc-hint{font-size:.75rem;color:#6a5e50;margin-top:1rem;font-style:italic}
+.fc-def{font-size:.88rem;line-height:1.6;color:#2a2018}
+.fc-ch{font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.15em;color:var(--faded);margin-top:.75rem;text-transform:uppercase}
+.fc-nav{display:flex;align-items:center;justify-content:center;gap:1rem}
+.fbtn{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.6rem 1.4rem;border:1px solid var(--ink);background:transparent;cursor:pointer;transition:all .15s;color:var(--ink);border-radius:2px}
+.fbtn:hover{background:var(--ink);color:var(--paper)}.fbtn.p{background:var(--ink);color:var(--paper)}.fbtn.p:hover{background:var(--rust);border-color:var(--rust)}
+.snote{font-family:"JetBrains Mono",monospace;font-size:.62rem;color:var(--faded);text-align:center;margin-top:.75rem}
+
+/* ---- MATCHING ---- */
+#mv{max-width:800px;margin:0 auto}
+.m-status{font-family:"JetBrains Mono",monospace;font-size:.7rem;color:var(--faded);margin-bottom:1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.m-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.m-col-hdr{font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faded);margin-bottom:.5rem}
+.m-item{padding:.65rem .9rem;border:1px solid var(--aged);border-radius:4px;background:var(--card-bg);cursor:pointer;font-size:.85rem;line-height:1.4;margin-bottom:.5rem;transition:all .18s;box-shadow:1px 2px 5px var(--shadow)}
+.m-item:hover{border-color:var(--sepia);background:var(--aged)}
+.m-item.selected{border-color:var(--slate);background:rgba(58,74,92,.1);font-weight:600}
+.m-item.matched{border-color:var(--green);background:#d4ead9;color:#1a3a22;cursor:default;opacity:.7}
+.m-item.wrong{border-color:var(--red);background:#ead4d4;animation:shake .3s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.m-score{font-family:"Playfair Display",serif;font-size:1rem;font-weight:700;color:var(--ink)}
+.abtn{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.65rem 1.5rem;border:1px solid var(--ink);background:transparent;cursor:pointer;transition:all .15s;border-radius:2px;color:var(--ink)}
+.abtn:hover{background:var(--ink);color:var(--paper)}
+
+/* ---- QUIZ ---- */
+#qv{max-width:750px;margin:0 auto}
+.qq{background:var(--card-bg);border:1px solid var(--aged);border-radius:6px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:2px 3px 8px var(--shadow);display:none}.qq.active{display:block}
+.qnum{font-family:"JetBrains Mono",monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faded);margin-bottom:.75rem}
+.qtext{font-family:"Playfair Display",serif;font-size:1.1rem;line-height:1.5;margin-bottom:1.25rem}
+.qopts{display:grid;gap:.5rem}
+.qopt{font-size:.88rem;padding:.65rem 1rem;border:1px solid var(--aged);background:var(--paper);border-radius:3px;cursor:pointer;transition:all .15s;text-align:left;line-height:1.4;color:var(--ink);font-family:"Source Serif 4",serif}
+.qopt:hover:not(:disabled){border-color:var(--slate);background:var(--aged)}.qopt.correct{background:#d4ead9;border-color:var(--green);color:#1a3a22}.qopt.wrong{background:#ead4d4;border-color:var(--red);color:#3a1010}.qopt:disabled{cursor:default}
+.qexp{margin-top:1rem;padding:.75rem 1rem;background:rgba(181,147,58,.1);border-left:3px solid var(--sepia);border-radius:0 3px 3px 0;font-size:.85rem;line-height:1.55;color:#2a2018;display:none}.qexp.show{display:block}
+.qctrl{display:flex;justify-content:flex-end;margin-top:1rem}
+.sbar{background:var(--aged);border-radius:2px;height:6px;width:100%;margin-bottom:1.5rem;overflow:hidden}
+.sfill{height:100%;background:linear-gradient(90deg,var(--green),var(--sepia));border-radius:2px;transition:width .4s;width:0%}
+.qres{text-align:center;padding:2.5rem 2rem;display:none}.qres.show{display:block}
+.rscore{font-family:"Playfair Display",serif;font-size:4rem;font-weight:900;color:var(--rust);line-height:1;margin-bottom:.5rem}
+.rlabel{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faded);margin-bottom:1.5rem}
+
+/* ---- TIMELINE ---- */
+#tv{max-width:800px;margin:0 auto}
+.tline{position:relative;padding-left:2.5rem}
+.tline::before{content:"";position:absolute;left:.85rem;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--sepia),var(--slate))}
+.titem{position:relative;margin-bottom:1.25rem;padding:1rem 1.25rem;background:var(--card-bg);border:1px solid var(--aged);border-radius:4px;box-shadow:2px 3px 8px var(--shadow);transition:transform .15s}.titem:hover{transform:translateX(3px)}
+.titem::before{content:"";position:absolute;left:-1.85rem;top:1.1rem;width:10px;height:10px;border-radius:50%;background:var(--sepia);border:2px solid var(--paper);box-shadow:0 0 0 2px var(--sepia)}
+.tyear{font-family:"JetBrains Mono",monospace;font-size:.65rem;color:var(--sepia);letter-spacing:.1em;margin-bottom:.2rem}
+.ttitle{font-family:"Playfair Display",serif;font-size:.95rem;font-weight:700;margin-bottom:.3rem}
+.tdesc{font-size:.82rem;line-height:1.5;color:#4a3a28}
+.ttag{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;padding:.15rem .4rem;border-radius:2px;margin:.4rem .3rem 0 0}
+.ttag.politics{background:rgba(58,74,92,.12);color:var(--slate)}.ttag.economy{background:rgba(139,58,30,.1);color:var(--rust)}.ttag.culture{background:rgba(181,147,58,.15);color:#7a5a10}.ttag.scandal{background:rgba(122,32,32,.1);color:var(--red)}.ttag.newdeal{background:rgba(45,90,61,.12);color:var(--green)}
+
+/* ---- LONG RESPONSE ---- */
+#lv{max-width:800px;margin:0 auto}
+.essay-prompt{background:var(--card-bg);border:1px solid var(--aged);border-radius:6px;padding:1.5rem;margin-bottom:1.25rem;box-shadow:2px 3px 8px var(--shadow)}
+.essay-num{font-family:"JetBrains Mono",monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faded);margin-bottom:.6rem}
+.essay-q{font-family:"Playfair Display",serif;font-size:1.05rem;line-height:1.5;margin-bottom:.75rem;font-weight:600}
+.essay-outline{margin-top:.25rem}
+.essay-outline summary{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sepia);cursor:pointer;padding:.4rem 0;user-select:none}
+.essay-outline summary:hover{color:var(--rust)}
+.essay-outline[open] summary{margin-bottom:.5rem}
+.essay-outline .ol-sec{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin:1rem 0 .3rem;font-weight:600}
+.essay-outline .ol-sec:first-child{margin-top:.25rem}
+.essay-outline ul{list-style:none;padding:0;margin:0 0 .25rem 0}
+.essay-outline li{font-size:.84rem;line-height:1.55;color:#2a2018;padding:.15rem 0 .15rem 1rem;position:relative}
+.essay-outline li::before{content:"\2013";position:absolute;left:0;color:var(--sepia);font-weight:700}
+.essay-outline li strong{color:var(--ink);font-weight:600}
+.essay-outline li em{color:var(--faded)}
+
+/* ---- WEAK CARD ---- */
+.fc-conf{display:flex;justify-content:center;gap:.75rem;margin-bottom:.75rem}
+.fc-know{border-color:var(--green);color:var(--green)}.fc-know:hover{background:var(--green);color:var(--paper);border-color:var(--green)}
+.fc-weak{border-color:var(--rust);color:var(--rust)}.fc-weak:hover,.fc-weak.suggested{background:var(--rust);color:var(--paper);border-color:var(--rust)}
+.fc-weak-info{font-family:"JetBrains Mono",monospace;font-size:.62rem;color:var(--rust);text-align:center;margin-bottom:.75rem}
+@media(max-width:600px){.tab-btn{padding:.7rem .65rem;font-size:.55rem;letter-spacing:.06em}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Land of Hope &middot; Wilfred M. McClay</div>
+  <h1>Chapters 16 &amp; 17</h1>
+  <p class="hsub">From Boom to Bust &nbsp;&middot;&nbsp; The New Deal &nbsp;&middot;&nbsp; 1919&ndash;1940</p>
+</header>
+<nav>
+  <button class="tab-btn active" onclick="showV('rv',this)">Review</button>
+  <button class="tab-btn" onclick="showV('tv',this)">Timeline</button>
+  <button class="tab-btn" onclick="showV('fv',this)">Flashcards</button>
+  <button class="tab-btn" onclick="showV('mv',this)">Matching</button>
+  <button class="tab-btn" onclick="showV('qv',this)">Quiz</button>
+  <button class="tab-btn" onclick="showV('lv',this)">Long Response</button>
+  <button class="tab-btn" onclick="showV('kv',this)">Answer Key</button>
+</nav>
+<main>
+
+<div id="rv" class="view active">
+<h2 class="ch-hdr">Chapter 16 <span>From Boom to Bust</span></h2>
+<div class="sec-hdr">Postwar Context (1918-1920)</div>
+<ul class="bul-list">
+<li><strong>Spanish Flu:</strong> Killed 675,000 Americans (22M worldwide); ~28% of U.S. infected; spread by wartime mobilization</li>
+<li><strong>Palmer Raids:</strong> A.G. Palmer arrested ~6,000 radical aliens after June 1919 bombings; discredited when May Day 1920 uprising never happened</li>
+<li><strong>Return to Normalcy:</strong> Harding's 1920 slogan — relief from flu, race riots, Red Scare, Wilsonian moralism; not nostalgia but a real promise of stability</li>
+<li><strong>John Maynard Keynes:</strong> British economist warned Versailles reparations were impossibly high and would produce a worse war; compared Wilson to a provincial minister overmatched by European counterparts</li>
+</ul>
+<div class="sec-hdr">Harding Administration (1921-1923)</div>
+<ul class="bul-list">
+<li><strong>Andrew Mellon:</strong> Treasury Secretary; cut top rate 77%→24%, bottom 4%→0.5%; halved national debt $33B→$16B; argued lower rates paradoxically produced more revenue</li>
+<li><strong>Good appointments:</strong> William Howard Taft as Chief Justice; Herbert Hoover at Commerce; Mellon at Treasury</li>
+<li><strong>Teapot Dome:</strong> Interior Sec. Albert Fall secretly leased Teapot Dome (WY) and Elk Hills (CA) oil reserves for $400K bribe; first cabinet official imprisoned</li>
+<li><strong>Charles R. Forbes:</strong> Veterans Bureau head; massive theft and mismanagement of veteran services</li>
+<li><strong>Harry M. Daugherty:</strong> Attorney General; fraudulently released German assets seized during WWI</li>
+<li><strong>Harding died</strong> August 2, 1923 of a heart attack in San Francisco, before the full depth of the scandals emerged</li>
+</ul>
+<div class="sec-hdr">Coolidge Administration (1923-1929)</div>
+<ul class="bul-list">
+<li><strong>Oath by kerosene lamp:</strong> Coolidge sworn in by his father (a justice of the peace) at 2:47 AM in Vermont farmhouse — no electricity or phone</li>
+<li><strong>'The chief business of the American people is business'</strong> — Coolidge's governing philosophy</li>
+<li><strong>1924 election:</strong> Beat independent Robert La Follette and Democrats too divided to even condemn the KKK</li>
+<li><strong>1926 Philadelphia Speech:</strong> Defended the Declaration of Independence against Progressive revision — 'those who wish to proceed in that direction can not lay claim to progress'</li>
+<li><strong>Chose not to run in 1928</strong> — left before the crash, preserving his reputation</li>
+</ul>
+<div class="sec-hdr">1920s Economy & Culture</div>
+<ul class="bul-list">
+<li><strong>Coolidge Prosperity:</strong> 42% GNP growth; 4.7%/year avg; 26M cars by 1929; average income rose $6,460→$8,016; national debt halved</li>
+<li><strong>Henry Ford:</strong> Model T ($300); moving assembly line; 9,000 cars/day by 1925; paid workers double competitors; said 'history is bunk' yet built Greenfield Village</li>
+<li><strong>KDKA Pittsburgh (1920):</strong> First U.S. broadcast radio station; by 1929 60% of families owned radios</li>
+<li><strong>Lindbergh (1927):</strong> First solo transatlantic flight; NY→Paris; 3,600 mi; 33.5 hrs; Spirit of St. Louis; $25,000 prize; 200,000 in NYC to greet him</li>
+<li><strong>Gargoyle Journalism (Kenneth S. Lynn):</strong> Sensational mass-media depictions of the 1920s (e.g. Frederick Lewis Allen's 'Only Yesterday') based on upper-class urban experience, not the whole country</li>
+<li><strong>Pseudo-Event (Boorstin):</strong> Events manufactured by mass media; danger of the 1920s was celebrity meaning 'famous for being well known,' not for actual achievement</li>
+<li><strong>Booth Tarkington:</strong> Indiana novelist; Alice Adams (Pulitzer) depicted ordinary Midwesterners — the real 1920s, not Fitzgerald's glamour</li>
+</ul>
+<div class="sec-hdr">Cultural Conflicts</div>
+<ul class="bul-list">
+<li><strong>Scopes Trial (1925):</strong> Dayton, TN; John Scopes tried for violating Butler Act (banned teaching evolution); Bryan vs. Darrow; Mencken covered it; fundamentalism suffered decisive PR defeat; complication: Scopes's textbook was openly racist and eugenicist</li>
+<li><strong>Prohibition (18th Amendment):</strong> Passed Dec 1917, in effect Jan 1919; a Progressive (not reactionary) measure; alcohol fell 50% but spawned Al Capone and organized crime; real damage: created laws millions refused to obey, eroding respect for law itself</li>
+<li><strong>Al Capone:</strong> Chicago crime boss; proof Prohibition gave organized crime a permanent foothold; in Detroit, illegal alcohol was the second-largest industry</li>
+<li><strong>1921 and 1924 immigration quotas</strong> sharply restricted entry of Southern and Eastern Europeans</li>
+</ul>
+<div class="sec-hdr">Hoover & the Crash (1928-1933)</div>
+<ul class="bul-list">
+<li><strong>Herbert Hoover:</strong> Iowa orphan → Stanford engineer → Belgium relief hero → Commerce Secretary; 'associationalism' (voluntary business-government cooperation); admired by Keynes; the Depression completely defeated him</li>
+<li><strong>Al Smith (1928):</strong> First Catholic major-party presidential nominee; lost to Hoover; signaled a new Democratic coalition forming</li>
+<li><strong>Stock Market Crash (1929):</strong> Black Thursday (Oct 24) + Black Tuesday (Oct 29); Dow 381→41 over three years; U.S. Steel $262→$22; the crash was a herald, not the principal cause, of the Depression</li>
+</ul>
+<div class="pq"><p>About the Declaration there is a finality that is exceedingly restful... If anyone wishes to deny their truth or their soundness, the only direction in which he can proceed historically is not forward, but backward toward the time when there was no equality, no rights of the individual, no rule of the people.</p><cite>Calvin Coolidge &middot; Philadelphia &middot; July 1926</cite></div>
+<h2 class="ch-hdr">Chapter 17 <span>The New Deal</span></h2>
+<div class="sec-hdr">Hoover's Depression Response (1930-1933)</div>
+<ul class="bul-list">
+<li><strong>Hawley-Smoot Tariff (1930):</strong> Hoover called it 'obnoxious' but signed; raised duties on 1,000+ items; Europe retaliated; U.S. exports and imports cut in half</li>
+<li><strong>RFC (Reconstruction Finance Corp., 1932):</strong> Emergency loans to banks, railroads, and institutions; criticized for helping the wealthy while ignoring individual suffering; Will Rogers: 'money trickles up, not down'</li>
+<li><strong>Hoovervilles:</strong> Makeshift shanty towns of cardboard and plywood; named mockingly after Hoover; symbol of Depression's human cost</li>
+<li><strong>Bonus Army (Summer 1932):</strong> 43,000 marchers — 17,000 WWI veterans + families — demanded early bonus payment; camped at Anacostia Flats; Hoover sent in Gen. MacArthur</li>
+<li><strong>MacArthur disobeyed Hoover's orders</strong> and drove directly into the camp with tear gas and tanks; Sen. Hiram Johnson: 'one of the blackest pages in our history'</li>
+<li><strong>Hoover's 'red line':</strong> Refused to cross into direct federal-individual relief, believing it would destroy self-reliance and break the constitutional order</li>
+</ul>
+<div class="sec-hdr">FDR & the First New Deal (1933)</div>
+<ul class="bul-list">
+<li><strong>FDR:</strong> Distant cousin of TR; educated Groton, Harvard, Columbia Law; paralyzed from waist down at 39 by Guillain-Barré; concealed from public; won 44/48 states in 1932</li>
+<li><strong>Oliver Wendell Holmes:</strong> 'A second-class intellect, but a first-class temperament' — FDR's unsinkable optimism was exactly what the Depression required</li>
+<li><strong>Brain Trust:</strong> Policy experts including Raymond Moley; conflicting ideas (antitrust vs. business-government cooperation vs. wealth redistribution)</li>
+<li><strong>Inaugural address (Mar 4, 1933):</strong> 'The only thing we have to fear is fear itself'; blamed 'money changers'; promised 'broad Executive power'</li>
+<li><strong>Fireside Chats:</strong> FDR's masterful use of radio to explain policies intimately to the American people</li>
+<li><strong>Bank Holiday:</strong> Declared on inauguration day; 4/5 of banks already closed; Banking Act of 1933 created FDIC (insured deposits to $5,000) and separated commercial from investment banking</li>
+</ul>
+<div class="sec-hdr">Hundred Days Programs (Mar-Jun 1933)</div>
+<ul class="bul-list">
+<li><strong>NIRA/NRA (Gen. Hugh Johnson):</strong> Industries set codes for prices, wages, production; antitrust laws exempted; blue eagle emblem; captured by big manufacturers; struck down by Schechter (1935)</li>
+<li><strong>AAA:</strong> Paid farmers to reduce production to raise commodity prices; counterintuitive (destroyed food during a famine); large producers benefited; struck down 1936</li>
+<li><strong>CCC:</strong> 3 million young men in national parks and forests</li>
+<li><strong>CWA:</strong> 4 million workers building roads, bridges, schools</li>
+<li><strong>WPA (1935-1943):</strong> 8.5M+ employed; included artists and writers (Federal Theatre Project); unemployment still never dropped below 10%</li>
+<li><strong>TVA:</strong> Government electricity for impoverished Tennessee Valley</li>
+<li><strong>SEC:</strong> Regulated stock markets to prevent 1929-style speculation</li>
+<li><strong>FHA:</strong> Insured home loans, boosting construction and homeownership</li>
+</ul>
+<div class="sec-hdr">Opposition Forces</div>
+<ul class="bul-list">
+<li><strong>American Liberty League (Right):</strong> Bipartisan opposition; led by both John W. Davis (1924 Dem nominee) AND Al Smith (1928 Dem nominee) — showing how far left FDR had moved</li>
+<li><strong>Huey Long (Left):</strong> Share Our Wealth Society; 7.5 million members; guaranteed income financed by taxing the rich; genuine threat to FDR; assassinated September 1935</li>
+<li><strong>Father Coughlin (Left):</strong> ~45 million radio listeners; promoted silver coinage; increasingly antisemitic</li>
+<li><strong>Dr. Townsend (Left):</strong> $200/month for all elderly (to be spent each month); inspired Social Security's old-age provisions</li>
+<li><strong>Milo Reno:</strong> Iowa populist; 'We were promised a New Deal, instead we have the same old stacked deck'</li>
+<li><strong>Schechter Poultry v. U.S. (1935):</strong> Supreme Court unanimously struck down the NIRA; opened the door to the Second New Deal</li>
+</ul>
+<div class="sec-hdr">Second New Deal (1935)</div>
+<ul class="bul-list">
+<li><strong>Social Security Act:</strong> FDR's 'cornerstone'; retirement pensions funded by equal payroll taxes on worker AND employer (so recipients wouldn't feel like charity cases); plus unemployment insurance and aid for disabled/dependent children; first direct federal-individual financial relationship</li>
+<li><strong>Wagner Act (Robert Wagner, NY):</strong> Guaranteed right to organize and bargain collectively; forbade employer interference; created NLRB</li>
+<li><strong>Revenue Act of 1935 ('Wealth Tax'):</strong> Raised rates above $50,000; Hearst called it 'communism'; Chamber of Commerce withdrew FDR endorsement; raised little actual new revenue</li>
+<li><strong>1936 election:</strong> FDR crushed Alf Landon 60.8-36.5%; won all but Maine and Vermont; African Americans shifted majority from Republican to Democrat for first time since Reconstruction</li>
+</ul>
+<div class="sec-hdr">Second Term Decline (1937-1939)</div>
+<ul class="bul-list">
+<li><strong>Court-Packing (1937):</strong> FDR proposed adding justices; fiercely opposed by both parties; FDR backed down; two justices apparently shifted positions ('switch in time that saved nine') — upholding Wagner Act and Social Security</li>
+<li><strong>Roosevelt Recession (1937):</strong> Caused by FDR's budget cuts + $2B Social Security payroll tax drain + business fears; economy fell below early-1930s depths; gave ammunition to critics who said New Deal prolonged the Depression</li>
+<li><strong>Executive Reorganization Act (1937):</strong> Attempted to free executive from congressional oversight; defeated amid 'dictator' fears</li>
+<li><strong>1938 Purge Primaries:</strong> FDR tried to oust conservative Democrats; failed completely; destroyed his aura of invincibility</li>
+<li><strong>1938 elections:</strong> Democrats lost 6 Senate, 71 House seats, 12 governorships; conservative coalition (Republicans + conservative Democrats) controlled the House; Arthur Krock: 'The New Deal has been halted'</li>
+<li><strong>Conclusion:</strong> New Deal made permanent changes and restored national spirit, but unemployment never dropped below 10% — it would take war itself to end the Depression</li>
+</ul>
+<div class="pq"><p>The money was appropriated for the top in the hopes that it would trickle down to the needy. Mr. Hoover was an engineer. He knew that water trickles down. Put it uphill and let it go and it will reach the driest little spot. But he didn't know that money trickles up. Give it to the people at the bottom and the people at the top will have it before night, anyhow.</p><cite>Will Rogers &mdash; on the RFC / trickle-down economics</cite></div>
+</div>
+<div id="tv" class="view">
+<div style="margin:1.5rem 0 2rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+<span style="font-family:'JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--faded)">Filter:</span>
+<button class="cat-btn active" onclick="filterTL('all',this)">All</button>
+<button class="cat-btn" onclick="filterTL('politics',this)">Politics</button>
+<button class="cat-btn" onclick="filterTL('economy',this)">Economy</button>
+<button class="cat-btn" onclick="filterTL('culture',this)">Culture</button>
+<button class="cat-btn" onclick="filterTL('scandal',this)">Scandal</button>
+<button class="cat-btn" onclick="filterTL('newdeal',this)">New Deal</button>
+</div>
+<div class="tline" id="tlist"></div>
+</div>
+<div id="fv" class="view">
+<div class="fc-ctrl">
+<div class="fc-cats">
+<button class="cat-btn active" onclick="filterFC('all',this)">All</button>
+<button class="cat-btn" onclick="filterFC('person',this)">People</button>
+<button class="cat-btn" onclick="filterFC('event',this)">Events</button>
+<button class="cat-btn" onclick="filterFC('concept',this)">Concepts</button>
+<button class="cat-btn" onclick="filterFC('program',this)">Programs</button>
+<button class="cat-btn" id="fcWeakBtn" onclick="filterFC('weak',this)" style="border-color:var(--rust);color:var(--rust);display:none">Weak Cards</button>
+</div>
+<span class="fc-prog" id="fcp">1 / 1</span>
+</div>
+<div class="fc-wrap" onclick="flipFC()">
+<div class="fc" id="fccard">
+<div class="fc-face fc-front">
+<div class="fc-type" id="fct">Person</div>
+<div class="fc-term" id="fcterm">Term</div>
+<div class="fc-hint">Click to reveal &mdash; or check Answer Key tab</div>
+</div>
+<div class="fc-face fc-back">
+<div class="fc-type" id="fcbt">Person</div>
+<div class="fc-def" id="fcdef">Definition</div>
+<div class="fc-ch" id="fcch">Chapter 16</div>
+</div>
+</div>
+</div>
+<div id="fc-conf" class="fc-conf" style="display:none">
+<button class="fbtn fc-know" onclick="fcKnow()">&#10003; Know it</button>
+<button class="fbtn fc-weak" onclick="fcWeak()">&#8635; Study Again</button>
+</div>
+<div class="fc-weak-info" id="fcwc" style="display:none"></div>
+<div class="fc-nav">
+<button class="fbtn" onclick="prevFC()">&#8592; Prev</button>
+<button class="fbtn p" onclick="shuffleFC()">Shuffle</button>
+<button class="fbtn" onclick="nextFC()">Next &#8594;</button>
+</div>
+<p class="snote">Keyboard: &#8592; &#8594; Space &nbsp;&mdash;&nbsp; Flip then rate &mdash; slow flips (&gt;4s) auto-suggest Study Again</p>
+</div>
+<div id="mv" class="view">
+<div style="margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem">
+<div>
+<p style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700">Matching</p>
+<p style="font-size:.82rem;color:var(--faded);margin-top:.2rem">Click a term, then click its matching definition</p>
+</div>
+<button class="abtn" onclick="newMatch()">New Round</button>
+</div>
+<div class="m-status">
+<span class="m-score" id="mscore">0 / 10 matched</span>
+<span id="mfeedback" style="color:var(--faded);font-size:.75rem"></span>
+</div>
+<div class="m-cols">
+<div>
+<div class="m-col-hdr">Terms</div>
+<div id="mterms"></div>
+</div>
+<div>
+<div class="m-col-hdr">Definitions</div>
+<div id="mdefs"></div>
+</div>
+</div>
+</div>
+<div id="qv" class="view">
+<div style="margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem">
+<div>
+<p style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700">Multiple Choice Quiz</p>
+<p style="font-size:.82rem;color:var(--faded);margin-top:.2rem">Chapters 16 &amp; 17 &mdash; 20 questions</p>
+</div>
+<button class="abtn" onclick="resetQ()">Restart Quiz</button>
+</div>
+<div class="sbar"><div class="sfill" id="sfill"></div></div>
+<div id="qcon"></div>
+<div class="qres" id="qres">
+<div class="rscore" id="rsc">0/20</div>
+<div class="rlabel">Final Score</div>
+<p id="rmsg" style="font-size:.95rem;line-height:1.6;color:var(--faded);max-width:400px;margin:0 auto 1.5rem"></p>
+<button class="abtn" onclick="resetQ()">Try Again</button>
+</div>
+</div>
+<div id="kv" class="view">
+<p style="font-size:.82rem;color:var(--faded);margin-bottom:1.5rem;font-style:italic">Detailed answer reference for every flashcard term &mdash; organized by type.</p>
+<h2 class="ch-hdr">Chapter 16 <span>From Boom to Bust</span></h2>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Key People — Chapter 16</div>
+<div class="grid">
+<div class="card person"><div class="clabel">Person</div><div class="cname">Warren G. Harding</div><div class="cdesc">29th president (1921-23). Return to Normalcy. Good appointments: Mellon, Taft, Hoover. Terrible: Forbes, Fall, Daugherty. Died Aug 2, 1923 before scandals emerged. Reputation destroyed.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Andrew W. Mellon</div><div class="cdesc">Treasury Secretary under Harding, Coolidge, Hoover. Cut top rate 77% to 24%, bottom 4% to 0.5%. Halved national debt $33B to $16B. Argued lower rates paradoxically produced more revenue.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">John Maynard Keynes</div><div class="cdesc">British economist, Paris Conference delegate (1919). Warned Versailles reparations would produce a worse war. Compared Wilson to a provincial Presbyterian minister. Admired Hoover's European relief.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Calvin Coolidge</div><div class="cdesc">30th president. Sworn in by father by kerosene lamp in Vermont farmhouse. The chief business of the American people is business. 1926 Philadelphia speech defended the Declaration against Progressive revision.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Henry Ford</div><div class="cdesc">Model T ($300), moving assembly line, 9,000 cars/day by 1925. Paid workers double competitors. Said history is bunk yet built Greenfield Village. A walking contradiction of his own modernism.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Charles Lindbergh</div><div class="cdesc">First solo transatlantic flight (NY to Paris, 3,600 mi, 33.5 hrs), Spirit of St. Louis, 1927. $25,000 prize. 200,000 in New York. Classic mass media celebrity creation.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Albert Fall</div><div class="cdesc">Interior secretary who secretly leased Teapot Dome (WY) and Elk Hills (CA) oil reserves for $400,000 bribe. First cabinet official imprisoned in U.S. history.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">William Howard Taft</div><div class="cdesc">Former president appointed Chief Justice of the Supreme Court by Harding - one of his best decisions alongside Mellon and Hoover.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Charles R. Forbes</div><div class="cdesc">Head of the Veterans Bureau. Massive thefts and mismanagement of veteran services - one of the key Harding administration scandals.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Harry M. Daugherty</div><div class="cdesc">Harding's attorney general. Fraudulently released German assets seized during WWI. Key figure in the corruption that destroyed Harding's legacy.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Robert La Follette</div><div class="cdesc">Progressive Wisconsin senator. Independent presidential candidate in 1924 against Coolidge and a Democratic Party too divided to condemn the KKK.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Al Smith</div><div class="cdesc">Irish Catholic governor of NY. First Catholic major-party presidential nominee (Democrat, 1928). Lost to Hoover. Later joined the American Liberty League opposing FDR's New Deal.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Herbert Hoover</div><div class="cdesc">Iowa orphan, Stanford engineer, Belgium relief hero, Commerce Secretary, President. Believed in associationalism. Admired by Keynes. The Depression completely defeated him and his image.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">H.L. Mencken</div><div class="cdesc">Baltimore critic with an acid pen. Covered the Scopes Trial. Exemplified the gargoyle journalism that shaped how the 1920s are remembered.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Al Capone</div><div class="cdesc">Chicago Scarface. Custom green armored Cadillac. Flourished under Prohibition. In Detroit, illegal alcohol was the second-largest industry after automobiles.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Booth Tarkington</div><div class="cdesc">Indiana novelist. Alice Adams (Pulitzer Prize) depicted a lower-middle-class Midwestern family - the real America that gargoyle journalism missed.</div></div>
+</div>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Key Events — Chapter 16</div>
+<div class="grid">
+<div class="card event"><div class="clabel">Event</div><div class="cname">Spanish Influenza (1918-19)</div><div class="cdesc">675,000 Americans dead; 22M worldwide. About 28% of U.S. infected. Spread by wartime mobilization. Philadelphia dug mass graves. One of the crises making Harding's normalcy message so resonant.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Palmer Raids / Red Scare (1919-20)</div><div class="cdesc">A.G. Palmer launched raids after June 1919 bombings, taking about 6,000 into custody. Discredited when his May Day 1920 uprising prediction failed to materialize.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Teapot Dome Scandal</div><div class="cdesc">Interior Sec. Albert Fall secretly leased Teapot Dome (WY) and Elk Hills (CA) for $400K bribe. Worst American political scandal to that point.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Stock Market Crash (1929)</div><div class="cdesc">Black Thursday (Oct 24) + Black Tuesday (Oct 29). Dow 381 to 41 three years later. U.S. Steel $262 to $22. Crash was a herald, not the principal cause, of the Depression.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Scopes Trial (1925)</div><div class="cdesc">Scopes tried in Dayton, TN for violating the Butler Act (banning evolution). Bryan vs. Darrow; Mencken reported. Fundamentalism suffered decisive PR defeat. Complication: the textbook was overtly racist and eugenicist.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Prohibition (18th Amendment)</div><div class="cdesc">Passed Dec 1917, in effect Jan 1919. A Progressive (not reactionary) measure. Alcohol fell 50% but spawned organized crime. Real damage: created laws millions refused to obey, eroding respect for law itself.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">KDKA Pittsburgh (1920)</div><div class="cdesc">First broadcast radio station in the U.S. Launched in 1920 carrying presidential election returns. By 1929, 60% of American families owned radios.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Lindbergh's Transatlantic Flight (1927)</div><div class="cdesc">Flew solo NY to Paris (3,600 mi, 33.5 hrs) in the Spirit of St. Louis, winning $25,000. 200,000 in NYC. Illustrated mass media's power to create national mythology.</div></div>
+</div>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Key Concepts — Chapter 16</div>
+<div class="grid">
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Return to Normalcy</div><div class="cdesc">Harding's 1920 slogan promising relief from postwar chaos (flu, Red Scare, race riots, economic upheaval, Wilsonian moralism). Not nostalgia but a genuine promise of stability.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Gargoyle Journalism</div><div class="cdesc">Kenneth S. Lynn's phrase for sensational mass-media depictions of the 1920s (Frederick Lewis Allen's Only Yesterday). Based on upper-class urban experience, not the average American.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Pseudo-Event (Boorstin)</div><div class="cdesc">Daniel Boorstin's term for events manufactured or amplified by mass media. In the 1920s - first era of national advertising - danger arose that celebrity meant famous for being well known, not for actual achievement.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Associationalism (Hoover)</div><div class="cdesc">Hoover's governing philosophy: voluntary cooperation between business and government instead of regulation or laissez-faire. Shaped his activist Depression response and its limitations.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Coolidge Prosperity</div><div class="cdesc">Economy grew 42% in the 1920s (4.7%/year avg). 26M cars. National debt halved. Built partly on speculation and credit.</div></div>
+</div>
+<h2 class="ch-hdr">Chapter 17 <span>The New Deal</span></h2>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Key People — Chapter 17</div>
+<div class="grid">
+<div class="card person"><div class="clabel">Person</div><div class="cname">Franklin D. Roosevelt (FDR)</div><div class="cdesc">Distant cousin of TR. Born to wealth; educated Groton, Harvard, Columbia Law. Stricken at 39 by Guillain-Barre, permanently paralyzed below the waist. Won 1932 in a 44-state landslide. Campaign song: Happy Days Are Here Again.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Raymond Moley</div><div class="cdesc">FDR's Brain Trust member. Said FDR never read serious books and had limited constitutional knowledge - compensated by extraordinary optimism. Later broke with Roosevelt over the Second New Deal.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Hugh Johnson</div><div class="cdesc">NRA director. Blue eagle emblem: We Do Our Part. Named Time Man of the Year (1933). Asked Clarence Darrow to investigate the NRA; Darrow concluded it existed to help big business crush small competitors.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Huey P. Long</div><div class="cdesc">Louisiana governor and senator. Share Our Wealth: guaranteed income financed by taxing the rich. 7.5 million-member Society. Genuine threat to FDR's 1936 coalition. Assassinated September 1935.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Father Charles Coughlin</div><div class="cdesc">Detroit-area Catholic priest with about 45 million radio listeners. Promoted currency reform; denounced bankers in increasingly antisemitic tones. Initially FDR-adjacent, then fierce opponent.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Dr. Francis E. Townsend</div><div class="cdesc">California doctor who lost savings in the crash. Proposed $200/month for all elderly (to be fully spent each month). His movement directly inspired Social Security's old-age provisions.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Douglas MacArthur</div><div class="cdesc">Led troops against the Bonus Army. Disobeyed Hoover's direct orders by driving into the Anacostia Flats encampment with tear gas and tanks. Fatal image for Hoover.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Robert Wagner</div><div class="cdesc">New York senator who sponsored the National Labor Relations Act (1935) - guaranteeing workers the right to organize and bargain collectively, creating the NLRB.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Alf Landon</div><div class="cdesc">Republican governor of Kansas. Ran against FDR in 1936. Lost 60.8 to 36.5%, winning only Maine and Vermont.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">Milo Reno</div><div class="cdesc">Iowa agrarian populist. Supported FDR in 1932 but complained: We were promised a New Deal, instead we have the same old stacked deck. Declared opposition to FDR in 1936.</div></div>
+<div class="card person"><div class="clabel">Person</div><div class="cname">William Randolph Hearst</div><div class="cdesc">Newspaper magnate who called the Revenue Act of 1935 communism. The Chamber of Commerce, which endorsed FDR in 1932, withdrew its endorsement in 1936.</div></div>
+</div>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Key Events — Chapter 17</div>
+<div class="grid">
+<div class="card event"><div class="clabel">Event</div><div class="cname">Bonus Army / BEF (1932)</div><div class="cdesc">43,000 marchers - 17,000 WWI veterans plus families - demanded early bonus payment. When Congress refused, thousands camped at Anacostia Flats. Hoover sent MacArthur with military force. One of Hoover's greatest political disasters.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">FDR's First Inaugural (Mar 4, 1933)</div><div class="cdesc">The only thing we have to fear is fear itself. Blamed bankers as money changers. Promised broad Executive power and war-like emergency measures. Followed by first fireside chat.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">The Hundred Days (Mar-Jun 1933)</div><div class="cdesc">March 9 to June 16, 1933. Wave of legislation: FDIC, CCC, CWA, NIRA/NRA, AAA, TVA, SEC, FHA. Unprecedented pace that restored national confidence.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Schechter Poultry v. U.S. (1935)</div><div class="cdesc">Supreme Court unanimously struck down the NIRA as unconstitutional. Gave FDR the opening to launch the Second New Deal.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Court-Packing Attempt (1937)</div><div class="cdesc">FDR proposed adding Supreme Court justices to dilute opponents. Fiercely resisted by both parties as a power grab. FDR backed down but two justices apparently shifted positions.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Roosevelt Recession (1937)</div><div class="cdesc">Sharp downturn from FDR's budget cuts, $2B Social Security payroll tax drain, and business fears of regulation. Dropped economy below early-1930s depths.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">1938 Elections and Conservative Coalition</div><div class="cdesc">Democrats lost 6 Senate, 71 House seats. Conservative coalition of Republicans and conservative Democrats controlled the House. Arthur Krock: The New Deal has been halted.</div></div>
+<div class="card event"><div class="clabel">Event</div><div class="cname">Hawley-Smoot Tariff (1930)</div><div class="cdesc">Hoover called it obnoxious but signed from party loyalty. Raised duties on 1,000+ items. Europe retaliated. U.S. exports and imports cut in half.</div></div>
+</div>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Programs — Chapter 17</div>
+<div class="grid">
+<div class="card program"><div class="clabel">Program</div><div class="cname">RFC (Reconstruction Finance Corp.)</div><div class="cdesc">Hoover's 1932 emergency loan program for banks, railroads, insurance companies, building and loans, and farm-mortgage associations. Helped the wealthy while ignoring individual suffering. Will Rogers mocked it as trickle-down.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">Banking Act of 1933 / FDIC</div><div class="cdesc">Created the Federal Deposit Insurance Corporation (insured deposits to $5,000) to prevent bank runs. Separated commercial from investment banking. Preceded by bank holiday; followed by first fireside chat.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">CCC (Civilian Conservation Corps)</div><div class="cdesc">Employed about 3 million young unemployed men in national parks and forests. One of the most popular New Deal programs.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">WPA (Works Progress Administration)</div><div class="cdesc">1935-1943. Employed at least 8.5 million people building public works and supporting artists and writers. Unemployment still never dropped below 10%.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">NIRA / NRA</div><div class="cdesc">National Industrial Recovery Act created the National Recovery Administration. Industries set codes for prices, wages, production. Blue eagle: We Do Our Part. Captured by big manufacturers. Struck down by Schechter (1935).</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">AAA (Agricultural Adjustment Admin.)</div><div class="cdesc">Paid farmers to reduce production to raise commodity prices. Counterintuitive during a famine. Large producers benefited over small ones. Struck down by Supreme Court in 1936.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">Social Security Act (1935)</div><div class="cdesc">FDR's cornerstone of the New Deal. Retirement pensions funded by equal payroll taxes on BOTH worker and employer. Plus unemployment insurance and aid for disabled and dependent children. First direct federal-individual financial relationship.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">Wagner Act (1935)</div><div class="cdesc">National Labor Relations Act (Sen. Robert Wagner, NY). Guaranteed workers the right to organize and bargain collectively. Forbade employer interference. Created the NLRB.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">Revenue Act of 1935 (Wealth Tax)</div><div class="cdesc">Raised income taxes above $50,000 plus corporate, estate, and gift taxes. Hearst called it communism. Chamber of Commerce withdrew FDR endorsement. Raised little new revenue.</div></div>
+<div class="card program"><div class="clabel">Program</div><div class="cname">TVA (Tennessee Valley Authority)</div><div class="cdesc">Government-subsidized electricity for the impoverished Tennessee Valley. Created jobs and modernized the region.</div></div>
+</div>
+<div class="sec-hdr" style="margin:1.25rem 0 .6rem">Key Concepts — Chapter 17</div>
+<div class="grid">
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Second New Deal / Second Hundred Days (1935)</div><div class="cdesc">1935 legislative flood after Schechter. More radical than First New Deal: Social Security, Wagner Act, Revenue Act. Driven by pressure from Long, Townsend, and Coughlin on FDR's left.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">American Liberty League</div><div class="cdesc">Bipartisan opposition group resisting New Deal executive power expansion. Led by both John W. Davis (1924 Democratic nominee) AND Al Smith (1928 Democratic nominee).</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Share Our Wealth Society</div><div class="cdesc">Huey Long's 7.5 million-member organization. Proposed guaranteed annual income financed by taxing the rich. Most serious left-wing challenge to FDR before Long's assassination.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Switch in Time That Saved Nine</div><div class="cdesc">Two Supreme Court justices apparently altered their positions after FDR's court-packing threat - upholding the Wagner Act and Social Security Act. FDR won the outcome but paid a severe reputational cost.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Conservative Coalition (1938)</div><div class="cdesc">Alliance of Republicans and conservative southern Democrats controlling the House after 1938. Blocked further New Deal legislation for decades.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Brain Trust</div><div class="cdesc">FDR's team of policy experts including Raymond Moley. Had conflicting ideas (antitrust vs. government-business cooperation vs. wealth redistribution).</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Hoovervilles</div><div class="cdesc">Makeshift shanty towns of cardboard and plywood housing unemployed Americans. Named mockingly after Hoover. Symbol of the Depression's human cost.</div></div>
+<div class="card concept"><div class="clabel">Concept</div><div class="cname">Trickle-Down Economics (Will Rogers)</div><div class="cdesc">Rogers: money trickles up, not down - give it to the top and the people at the top will have it before night, anyhow. Enduring critique of supply-side economics.</div></div>
+</div>
+</div>
+<div id="lv" class="view">
+<div style="margin-bottom:2rem">
+<p style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700">Long Response Prompts</p>
+<p style="font-size:.82rem;color:var(--faded);margin-top:.2rem">Practice essay questions &mdash; expand each outline for key points and evidence to include</p>
+</div>
+<div class="essay-prompt">
+<div class="essay-num">Prompt 1</div>
+<div class="essay-q">Compare and contrast Hoover&rsquo;s and FDR&rsquo;s responses to the Great Depression. What philosophical differences drove their policies, and why did FDR succeed politically where Hoover failed?</div>
+<details class="essay-outline">
+<summary>Show Key Points &amp; Evidence</summary>
+<div class="ol-sec">Hoover&rsquo;s Approach</div>
+<ul>
+<li><strong>Associationalism:</strong> voluntary business-government cooperation &mdash; neither laissez-faire nor heavy regulation</li>
+<li><strong>RFC (1932):</strong> emergency loans to banks and railroads &mdash; helped institutions, not individuals; Will Rogers: &ldquo;money trickles up, not down&rdquo;</li>
+<li><strong>Hawley-Smoot Tariff:</strong> called it &ldquo;obnoxious&rdquo; but signed from party loyalty; Europe retaliated; exports and imports cut in half</li>
+<li><strong>The &ldquo;red line&rdquo;:</strong> refused direct federal relief to individuals &mdash; believed it would destroy self-reliance and break the constitutional order</li>
+<li><strong>Bonus Army disaster:</strong> MacArthur disobeyed orders, drove into Anacostia Flats with tear gas and tanks &mdash; fatal to Hoover&rsquo;s image</li>
+</ul>
+<div class="ol-sec">FDR&rsquo;s Approach</div>
+<ul>
+<li><strong>&ldquo;First-class temperament&rdquo;:</strong> Holmes&rsquo;s assessment &mdash; FDR&rsquo;s unsinkable optimism was exactly what the Depression required</li>
+<li><strong>Bank Holiday + Fireside Chats:</strong> restored confidence through direct, intimate radio communication</li>
+<li><strong>Hundred Days:</strong> FDIC, CCC, CWA, NIRA, AAA, TVA, SEC &mdash; unprecedented legislative pace with near-total Congressional cooperation</li>
+<li><strong>Crossed Hoover&rsquo;s red line:</strong> Social Security created the first direct federal-individual financial relationship</li>
+<li><strong>Brain Trust:</strong> pragmatic, conflicting ideas &mdash; willingness to experiment rather than commit to one ideology</li>
+</ul>
+<div class="ol-sec">Key Contrast &amp; Conclusion</div>
+<ul>
+<li>Hoover&rsquo;s principled refusal to provide direct relief vs. FDR&rsquo;s pragmatic experimentation</li>
+<li>Both failed to end the Depression &mdash; unemployment never dropped below 10%; only WWII did</li>
+<li>FDR&rsquo;s political success: 1936 landslide (60.8%); African Americans shifted to Democrats for first time since Reconstruction</li>
+<li>Hoover was defeated by his own philosophy; FDR succeeded by abandoning ideological consistency</li>
+</ul>
+</details>
+</div>
+<div class="essay-prompt">
+<div class="essay-num">Prompt 2</div>
+<div class="essay-q">How did opposition from the left &mdash; Long, Coughlin, and Townsend &mdash; push FDR toward the more radical Second New Deal? Cite specific programs and legislation.</div>
+<details class="essay-outline">
+<summary>Show Key Points &amp; Evidence</summary>
+<div class="ol-sec">The Left-Wing Challengers</div>
+<ul>
+<li><strong>Huey Long:</strong> Share Our Wealth Society &mdash; 7.5 million members; guaranteed income financed by taxing the rich; genuine threat to FDR&rsquo;s 1936 coalition; assassinated September 1935</li>
+<li><strong>Father Coughlin:</strong> ~45 million radio listeners; promoted currency reform and denounced bankers; increasingly antisemitic; initially FDR-adjacent, then fierce opponent</li>
+<li><strong>Dr. Townsend:</strong> $200/month for all elderly, to be fully spent each month; his movement directly inspired Social Security&rsquo;s old-age provisions</li>
+<li><strong>Milo Reno:</strong> &ldquo;We were promised a New Deal, instead we have the same old stacked deck&rdquo;</li>
+</ul>
+<div class="ol-sec">Schechter as Catalyst</div>
+<ul>
+<li><strong>Schechter Poultry v. U.S. (1935):</strong> Supreme Court unanimously struck down the NIRA &mdash; gave FDR the political opening for bolder legislation</li>
+<li>First New Deal programs (NRA, AAA) were being captured by big business anyway &mdash; Darrow concluded the NRA helped big business crush small competitors</li>
+</ul>
+<div class="ol-sec">Second New Deal Legislation (1935)</div>
+<ul>
+<li><strong>Social Security Act:</strong> FDR&rsquo;s &ldquo;cornerstone&rdquo; &mdash; retirement pensions, unemployment insurance, aid for disabled; responded directly to Townsend&rsquo;s pressure</li>
+<li><strong>Wagner Act:</strong> guaranteed right to organize and bargain collectively; created NLRB &mdash; responded to labor unrest</li>
+<li><strong>Revenue Act (&ldquo;Wealth Tax&rdquo;):</strong> raised rates above $50K; Hearst called it &ldquo;communism&rdquo; &mdash; responded directly to Long&rsquo;s redistribution demands</li>
+</ul>
+<div class="ol-sec">Conclusion</div>
+<ul>
+<li>Second New Deal was more radical than First &mdash; driven by pressure from FDR&rsquo;s left flank, not by FDR&rsquo;s own instincts</li>
+<li>1936 landslide (all but ME and VT) validated the leftward shift</li>
+<li>Long&rsquo;s assassination removed the greatest threat, but his influence was already embedded in the legislation</li>
+</ul>
+</details>
+</div>
+<div class="essay-prompt">
+<div class="essay-num">Prompt 3</div>
+<div class="essay-q">Explain how the cultural conflicts of the 1920s &mdash; the Scopes Trial, Prohibition, and immigration restriction &mdash; reflected deeper tensions between modernism and traditionalism in American life.</div>
+<details class="essay-outline">
+<summary>Show Key Points &amp; Evidence</summary>
+<div class="ol-sec">The Scopes Trial (1925)</div>
+<ul>
+<li>John Scopes tried in Dayton, TN for violating the Butler Act (banned teaching evolution)</li>
+<li><strong>Bryan vs. Darrow:</strong> Mencken&rsquo;s acid coverage gave fundamentalism a decisive PR defeat</li>
+<li><strong>Complication:</strong> Scopes&rsquo;s textbook (<em>A Civic Biology</em>) was openly racist and eugenicist &mdash; the &ldquo;science&rdquo; side was not simply enlightened</li>
+<li>Urban intellectuals (Mencken) vs. rural faith &mdash; but McClay shows neither side held the moral high ground entirely</li>
+</ul>
+<div class="ol-sec">Prohibition (18th Amendment)</div>
+<ul>
+<li>A <strong>Progressive</strong> (not reactionary) measure &mdash; passed Dec 1917, in effect Jan 1919</li>
+<li>Alcohol consumption did fall ~50%, but spawned organized crime: <strong>Al Capone</strong> in Chicago; in Detroit illegal alcohol was the second-largest industry</li>
+<li>Real damage: created laws millions refused to obey, <strong>eroding respect for law itself</strong></li>
+</ul>
+<div class="ol-sec">Immigration Restriction (1921, 1924)</div>
+<ul>
+<li>Quotas sharply restricted Southern and Eastern Europeans</li>
+<li>Reflected anxieties about national identity during rapid cultural change</li>
+</ul>
+<div class="ol-sec">The Deeper Tension</div>
+<ul>
+<li><strong>Gargoyle journalism (K.S. Lynn):</strong> sensational media portrayed the &rsquo;20s through an upper-class urban lens (F.L. Allen&rsquo;s <em>Only Yesterday</em>)</li>
+<li><strong>Booth Tarkington:</strong> Indiana novelist (<em>Alice Adams</em>, Pulitzer) depicted ordinary Midwesterners &mdash; the real 1920s, not Fitzgerald&rsquo;s glamour</li>
+<li><strong>Pseudo-events (Boorstin):</strong> mass media creating celebrity as &ldquo;famous for being well known&rdquo; &mdash; a fundamentally new cultural danger</li>
+<li>All three conflicts pit a rapidly modernizing urban culture against traditional rural and religious America</li>
+</ul>
+</details>
+</div>
+<div class="essay-prompt">
+<div class="essay-num">Prompt 4</div>
+<div class="essay-q">Assess the claim that the New Deal permanently transformed the relationship between the federal government and individual American citizens. What were the most significant changes, and what were their limits?</div>
+<details class="essay-outline">
+<summary>Show Key Points &amp; Evidence</summary>
+<div class="ol-sec">Before the New Deal</div>
+<ul>
+<li><strong>Hoover&rsquo;s red line:</strong> refused direct federal-individual relief &mdash; believed it would destroy self-reliance and break the constitutional order</li>
+<li>RFC lent to institutions (banks, railroads), never directly to people</li>
+<li>No precedent for a direct federal financial relationship with ordinary citizens</li>
+</ul>
+<div class="ol-sec">Transformative Programs</div>
+<ul>
+<li><strong>Social Security Act (1935):</strong> first direct federal-individual financial relationship; payroll taxes on both worker and employer so recipients wouldn&rsquo;t feel like charity cases</li>
+<li><strong>FDIC:</strong> government insuring individual bank deposits up to $5,000 &mdash; ended the psychology of bank runs</li>
+<li><strong>WPA/CCC:</strong> direct federal employment of millions (8.5M+ through WPA; 3M through CCC)</li>
+<li><strong>Wagner Act:</strong> federal government guaranteeing labor rights; created NLRB to enforce them</li>
+<li><strong>FHA:</strong> insured home loans, making homeownership accessible to millions</li>
+</ul>
+<div class="ol-sec">Limits of the Transformation</div>
+<ul>
+<li><strong>Unemployment never dropped below 10%</strong> &mdash; only WWII mobilization ended the Depression</li>
+<li><strong>Court-packing (1937):</strong> bipartisan opposition showed limits of executive power; FDR backed down</li>
+<li><strong>Roosevelt Recession (1937):</strong> budget cuts + SS payroll tax drain + business fears reversed recovery</li>
+<li><strong>Conservative Coalition (1938):</strong> Republicans + conservative southern Democrats halted further legislation; Krock: &ldquo;The New Deal has been halted&rdquo;</li>
+<li><strong>1938 Purge Primaries:</strong> FDR tried to oust conservative Democrats; failed completely; destroyed his aura of invincibility</li>
+</ul>
+<div class="ol-sec">Conclusion</div>
+<ul>
+<li>New Deal made permanent structural changes (Social Security, FDIC, NLRB still exist) and restored national spirit</li>
+<li>But did not end the Depression or establish unlimited executive authority</li>
+<li>Established the principle that the federal government has a direct responsibility to individual citizens &mdash; a line that, once crossed, was never retreated from</li>
+</ul>
+</details>
+</div>
+<div class="essay-prompt">
+<div class="essay-num">Prompt 5</div>
+<div class="essay-q">How did Hoover&rsquo;s philosophy of associationalism shape both his response to the Depression and its ultimate failure?</div>
+<details class="essay-outline">
+<summary>Show Key Points &amp; Evidence</summary>
+<div class="ol-sec">Hoover&rsquo;s Background &amp; Philosophy</div>
+<ul>
+<li>Iowa orphan &rarr; Stanford engineer &rarr; Belgium relief hero &rarr; Commerce Secretary under Harding and Coolidge</li>
+<li><strong>Associationalism:</strong> voluntary cooperation between business and government &mdash; a middle path between laissez-faire and state control</li>
+<li>Admired by Keynes; seen as the most capable man in government; not a do-nothing president</li>
+</ul>
+<div class="ol-sec">Associationalism in Action</div>
+<ul>
+<li><strong>RFC (1932):</strong> emergency loans to banks, railroads, institutions &mdash; voluntary-cooperation model applied to crisis</li>
+<li>Urged businesses to maintain wages and production voluntarily</li>
+<li><strong>Hawley-Smoot:</strong> signed despite calling it &ldquo;obnoxious&rdquo; &mdash; party loyalty overrode his own judgment; Europe retaliated and trade collapsed</li>
+<li>Expanded public works spending, but always through institutions &mdash; never directly to individuals</li>
+</ul>
+<div class="ol-sec">Why It Failed</div>
+<ul>
+<li><strong>The &ldquo;red line&rdquo;:</strong> associationalism&rsquo;s logic forbade direct federal relief &mdash; voluntary cooperation cannot be forced, and suffering individuals cannot wait</li>
+<li>Will Rogers: &ldquo;money trickles up, not down&rdquo; &mdash; RFC helped the wealthy while ignoring individual suffering</li>
+<li><strong>Bonus Army (1932):</strong> MacArthur disobeyed Hoover&rsquo;s orders and drove into the camp with tear gas and tanks; image of soldiers attacking veterans was fatal</li>
+<li><strong>Hoovervilles:</strong> the mocking name itself showed how completely the public blamed him personally</li>
+<li>The Depression was simply too deep for voluntary measures &mdash; associationalism assumed good-faith cooperation that collapse had destroyed</li>
+</ul>
+<div class="ol-sec">Conclusion</div>
+<ul>
+<li>Hoover&rsquo;s philosophy was coherent and principled, not callous &mdash; but the crisis exceeded what voluntary cooperation could address</li>
+<li>His refusal to cross the red line created the political opening for FDR&rsquo;s 44-state landslide</li>
+<li>FDR succeeded precisely by abandoning associationalism&rsquo;s limits and establishing direct federal-individual relationships</li>
+</ul>
+</details>
+</div>
+</div>
+</main>
+<script>
+const TL=[["1918-19", "Spanish Influenza", "Killed 675,000 Americans, 22M worldwide. ~28% of U.S. infected. Spread by wartime troop movements. Philadelphia dug mass graves with steam shovels.", "culture"], ["1919", "Keynes Warns on Versailles", "British economist predicts reparations will cause a second catastrophic war. Compares Wilson to a provincial minister overmatched by European powers.", "politics"], ["1919", "Palmer Raids / Red Scare", "A.G. Palmer raids radical aliens after June bombings. ~6,000 arrested. Discredited when May Day 1920 uprising never materialized.", "politics"], ["1920", "KDKA - First Radio Broadcast", "First U.S. broadcast station carries 1920 presidential election returns. By 1929, 60% of families own radios.", "culture"], ["1920", "Harding Elected - Return to Normalcy", "Wins in a landslide. Mellon named Treasury Secretary. Promise of relief from postwar chaos.", "politics"], ["1921", "FDR Stricken / Paralyzed", "Roosevelt, 39, permanently paralyzed below the waist by Guillain-Barre. Refuses to abandon politics.", "politics"], ["1921-29", "Mellon Tax Cuts and Coolidge Prosperity", "Top rate cut 77% to 24%. Economy grows 42%. National debt halved. Average income rises. 26M cars by 1929.", "economy"], ["1921-23", "Teapot Dome Scandal", "Interior Sec. Albert Fall leases government oil reserves for $400K bribe. First cabinet official imprisoned.", "scandal"], ["1923", "Harding Dies; Coolidge Takes Oath", "Coolidge sworn in by his father by kerosene lamp at 2:47 AM in Vermont farmhouse - no electricity or phone.", "politics"], ["1924", "Coolidge Wins Against La Follette", "Beats divided Democrats and Progressive independent Robert La Follette.", "politics"], ["1925", "Scopes Trial, Dayton, TN", "John Scopes tried for teaching evolution (Butler Act). Bryan vs. Darrow; Mencken covers it. Fundamentalism suffers decisive PR defeat.", "culture"], ["1926", "Coolidge Philadelphia Speech", "Defends the Declaration against Progressive revision. Stands in the tradition of Jefferson to Lincoln.", "politics"], ["1927", "Lindbergh Transatlantic Flight", "NY to Paris solo, 3,600 mi, 33.5 hrs in Spirit of St. Louis. 200,000 greet him in New York.", "culture"], ["1928", "Hoover Defeats Al Smith", "First Catholic major-party presidential nominee. New Democratic coalition forming beneath the surface.", "politics"], ["Oct 1929", "Stock Market Crash", "Black Thursday (Oct 24) + Black Tuesday (Oct 29). Dow 381 to 41 over three years. U.S. Steel $262 to $22.", "economy"], ["1930", "Hawley-Smoot Tariff", "Hoover signs despite calling it obnoxious. Europe retaliates. U.S. exports and imports cut in half.", "economy"], ["1930-32", "Depression Deepens", "13M unemployed (25%). Banks close by thousands. Hoovervilles. National income drops 40%.", "economy"], ["1932", "RFC Created", "Emergency loans to banks and key institutions. Will Rogers: money trickles up, not down.", "economy"], ["Summer 1932", "Bonus Army Dispersed", "43,000 marchers; MacArthur disobeys Hoover, drives into Anacostia Flats with tear gas and tanks.", "scandal"], ["Nov 1932", "FDR Elected", "44 of 48 states, 57-40%. New Deal coalition solidifies.", "politics"], ["Mar 4 1933", "FDR Inaugural / Bank Holiday", "The only thing we have to fear is fear itself. Four-fifths of banks already closed.", "newdeal"], ["Mar-Jun 1933", "The Hundred Days", "FDIC, CCC, CWA, NIRA/NRA, AAA, TVA, SEC, FHA. Near-total Congressional cooperation.", "newdeal"], ["1935", "Schechter Strikes Down NIRA", "Supreme Court rules NIRA unconstitutional. FDR launches Second New Deal.", "newdeal"], ["1935", "Second New Deal", "Social Security Act, Wagner Act, Revenue Act (wealth tax). More radical than First New Deal.", "newdeal"], ["Nov 1936", "FDR Landslide Re-Election", "Defeats Alf Landon 60.8-36.5%. Wins all states but Maine and Vermont.", "politics"], ["1937", "Court-Packing Attempt Fails", "FDR proposes adding justices; fierce bipartisan resistance. Switch in time that saved nine.", "politics"], ["1937", "Roosevelt Recession", "Budget cuts + $2B SS payroll tax + business fears. Economy falls below early-1930s depths.", "economy"], ["1938", "Purge Primaries Fail", "FDR tries to oust conservative Democrats. Fails. Damages his aura of invincibility.", "politics"], ["Nov 1938", "Conservative Coalition Takes House", "Democrats lose 6 Senate, 71 House seats. Arthur Krock: The New Deal has been halted.", "newdeal"], ["1939-41", "War Ends the Depression", "Not the moral equivalent of war but war itself. WWII mobilization accomplishes what the New Deal could not.", "economy"]];
+const FC=[["person", "Warren G. Harding", "29th president (1921-23). Return to Normalcy. Good appointments: Mellon, Taft, Hoover. Terrible: Forbes, Fall, Daugherty. Died Aug 2, 1923 before scandals emerged. Reputation destroyed.", 16], ["person", "Andrew W. Mellon", "Treasury Secretary under Harding, Coolidge, Hoover. Cut top rate 77% to 24%, bottom 4% to 0.5%. Halved national debt $33B to $16B. Argued lower rates paradoxically produced more revenue.", 16], ["person", "John Maynard Keynes", "British economist, Paris Conference delegate (1919). Warned Versailles reparations would produce a worse war. Compared Wilson to a provincial Presbyterian minister. Admired Hoover's European relief.", 16], ["person", "Calvin Coolidge", "30th president. Sworn in by father by kerosene lamp in Vermont farmhouse. The chief business of the American people is business. 1926 Philadelphia speech defended the Declaration against Progressive revision.", 16], ["person", "Henry Ford", "Model T ($300), moving assembly line, 9,000 cars/day by 1925. Paid workers double competitors. Said history is bunk yet built Greenfield Village. A walking contradiction of his own modernism.", 16], ["person", "Charles Lindbergh", "First solo transatlantic flight (NY to Paris, 3,600 mi, 33.5 hrs), Spirit of St. Louis, 1927. $25,000 prize. 200,000 in New York. Classic mass media celebrity creation.", 16], ["person", "Albert Fall", "Interior secretary who secretly leased Teapot Dome (WY) and Elk Hills (CA) oil reserves for $400,000 bribe. First cabinet official imprisoned in U.S. history.", 16], ["person", "William Howard Taft", "Former president appointed Chief Justice of the Supreme Court by Harding - one of his best decisions alongside Mellon and Hoover.", 16], ["person", "Charles R. Forbes", "Head of the Veterans Bureau. Massive thefts and mismanagement of veteran services - one of the key Harding administration scandals.", 16], ["person", "Harry M. Daugherty", "Harding's attorney general. Fraudulently released German assets seized during WWI. Key figure in the corruption that destroyed Harding's legacy.", 16], ["person", "Robert La Follette", "Progressive Wisconsin senator. Independent presidential candidate in 1924 against Coolidge and a Democratic Party too divided to condemn the KKK.", 16], ["person", "Al Smith", "Irish Catholic governor of NY. First Catholic major-party presidential nominee (Democrat, 1928). Lost to Hoover. Later joined the American Liberty League opposing FDR's New Deal.", 16], ["person", "Herbert Hoover", "Iowa orphan, Stanford engineer, Belgium relief hero, Commerce Secretary, President. Believed in associationalism. Admired by Keynes. The Depression completely defeated him and his image.", 16], ["person", "H.L. Mencken", "Baltimore critic with an acid pen. Covered the Scopes Trial. Exemplified the gargoyle journalism that shaped how the 1920s are remembered.", 16], ["person", "Al Capone", "Chicago Scarface. Custom green armored Cadillac. Flourished under Prohibition. In Detroit, illegal alcohol was the second-largest industry after automobiles.", 16], ["person", "Booth Tarkington", "Indiana novelist. Alice Adams (Pulitzer Prize) depicted a lower-middle-class Midwestern family - the real America that gargoyle journalism missed.", 16], ["event", "Spanish Influenza (1918-19)", "675,000 Americans dead; 22M worldwide. About 28% of U.S. infected. Spread by wartime mobilization. Philadelphia dug mass graves. One of the crises making Harding's normalcy message so resonant.", 16], ["event", "Palmer Raids / Red Scare (1919-20)", "A.G. Palmer launched raids after June 1919 bombings, taking about 6,000 into custody. Discredited when his May Day 1920 uprising prediction failed to materialize.", 16], ["event", "Teapot Dome Scandal", "Interior Sec. Albert Fall secretly leased Teapot Dome (WY) and Elk Hills (CA) for $400K bribe. Worst American political scandal to that point.", 16], ["event", "Stock Market Crash (1929)", "Black Thursday (Oct 24) + Black Tuesday (Oct 29). Dow 381 to 41 three years later. U.S. Steel $262 to $22. Crash was a herald, not the principal cause, of the Depression.", 16], ["event", "Scopes Trial (1925)", "Scopes tried in Dayton, TN for violating the Butler Act (banning evolution). Bryan vs. Darrow; Mencken reported. Fundamentalism suffered decisive PR defeat. Complication: the textbook was overtly racist and eugenicist.", 16], ["event", "Prohibition (18th Amendment)", "Passed Dec 1917, in effect Jan 1919. A Progressive (not reactionary) measure. Alcohol fell 50% but spawned organized crime. Real damage: created laws millions refused to obey, eroding respect for law itself.", 16], ["event", "KDKA Pittsburgh (1920)", "First broadcast radio station in the U.S. Launched in 1920 carrying presidential election returns. By 1929, 60% of American families owned radios.", 16], ["event", "Lindbergh's Transatlantic Flight (1927)", "Flew solo NY to Paris (3,600 mi, 33.5 hrs) in the Spirit of St. Louis, winning $25,000. 200,000 in NYC. Illustrated mass media's power to create national mythology.", 16], ["concept", "Return to Normalcy", "Harding's 1920 slogan promising relief from postwar chaos (flu, Red Scare, race riots, economic upheaval, Wilsonian moralism). Not nostalgia but a genuine promise of stability.", 16], ["concept", "Gargoyle Journalism", "Kenneth S. Lynn's phrase for sensational mass-media depictions of the 1920s (Frederick Lewis Allen's Only Yesterday). Based on upper-class urban experience, not the average American.", 16], ["concept", "Pseudo-Event (Boorstin)", "Daniel Boorstin's term for events manufactured or amplified by mass media. In the 1920s - first era of national advertising - danger arose that celebrity meant famous for being well known, not for actual achievement.", 16], ["concept", "Associationalism (Hoover)", "Hoover's governing philosophy: voluntary cooperation between business and government instead of regulation or laissez-faire. Shaped his activist Depression response and its limitations.", 16], ["concept", "Coolidge Prosperity", "Economy grew 42% in the 1920s (4.7%/year avg). 26M cars. National debt halved. Built partly on speculation and credit.", 16], ["person", "Franklin D. Roosevelt (FDR)", "Distant cousin of TR. Born to wealth; educated Groton, Harvard, Columbia Law. Stricken at 39 by Guillain-Barre, permanently paralyzed below the waist. Won 1932 in a 44-state landslide. Campaign song: Happy Days Are Here Again.", 17], ["person", "Raymond Moley", "FDR's Brain Trust member. Said FDR never read serious books and had limited constitutional knowledge - compensated by extraordinary optimism. Later broke with Roosevelt over the Second New Deal.", 17], ["person", "Hugh Johnson", "NRA director. Blue eagle emblem: We Do Our Part. Named Time Man of the Year (1933). Asked Clarence Darrow to investigate the NRA; Darrow concluded it existed to help big business crush small competitors.", 17], ["person", "Huey P. Long", "Louisiana governor and senator. Share Our Wealth: guaranteed income financed by taxing the rich. 7.5 million-member Society. Genuine threat to FDR's 1936 coalition. Assassinated September 1935.", 17], ["person", "Father Charles Coughlin", "Detroit-area Catholic priest with about 45 million radio listeners. Promoted currency reform; denounced bankers in increasingly antisemitic tones. Initially FDR-adjacent, then fierce opponent.", 17], ["person", "Dr. Francis E. Townsend", "California doctor who lost savings in the crash. Proposed $200/month for all elderly (to be fully spent each month). His movement directly inspired Social Security's old-age provisions.", 17], ["person", "Douglas MacArthur", "Led troops against the Bonus Army. Disobeyed Hoover's direct orders by driving into the Anacostia Flats encampment with tear gas and tanks. Fatal image for Hoover.", 17], ["person", "Robert Wagner", "New York senator who sponsored the National Labor Relations Act (1935) - guaranteeing workers the right to organize and bargain collectively, creating the NLRB.", 17], ["person", "Alf Landon", "Republican governor of Kansas. Ran against FDR in 1936. Lost 60.8 to 36.5%, winning only Maine and Vermont.", 17], ["person", "Milo Reno", "Iowa agrarian populist. Supported FDR in 1932 but complained: We were promised a New Deal, instead we have the same old stacked deck. Declared opposition to FDR in 1936.", 17], ["person", "William Randolph Hearst", "Newspaper magnate who called the Revenue Act of 1935 communism. The Chamber of Commerce, which endorsed FDR in 1932, withdrew its endorsement in 1936.", 17], ["event", "Bonus Army / BEF (1932)", "43,000 marchers - 17,000 WWI veterans plus families - demanded early bonus payment. When Congress refused, thousands camped at Anacostia Flats. Hoover sent MacArthur with military force. One of Hoover's greatest political disasters.", 17], ["event", "FDR's First Inaugural (Mar 4, 1933)", "The only thing we have to fear is fear itself. Blamed bankers as money changers. Promised broad Executive power and war-like emergency measures. Followed by first fireside chat.", 17], ["event", "The Hundred Days (Mar-Jun 1933)", "March 9 to June 16, 1933. Wave of legislation: FDIC, CCC, CWA, NIRA/NRA, AAA, TVA, SEC, FHA. Unprecedented pace that restored national confidence.", 17], ["event", "Schechter Poultry v. U.S. (1935)", "Supreme Court unanimously struck down the NIRA as unconstitutional. Gave FDR the opening to launch the Second New Deal.", 17], ["event", "Court-Packing Attempt (1937)", "FDR proposed adding Supreme Court justices to dilute opponents. Fiercely resisted by both parties as a power grab. FDR backed down but two justices apparently shifted positions.", 17], ["event", "Roosevelt Recession (1937)", "Sharp downturn from FDR's budget cuts, $2B Social Security payroll tax drain, and business fears of regulation. Dropped economy below early-1930s depths.", 17], ["event", "1938 Elections and Conservative Coalition", "Democrats lost 6 Senate, 71 House seats. Conservative coalition of Republicans and conservative Democrats controlled the House. Arthur Krock: The New Deal has been halted.", 17], ["event", "Hawley-Smoot Tariff (1930)", "Hoover called it obnoxious but signed from party loyalty. Raised duties on 1,000+ items. Europe retaliated. U.S. exports and imports cut in half.", 17], ["program", "RFC (Reconstruction Finance Corp.)", "Hoover's 1932 emergency loan program for banks, railroads, insurance companies, building and loans, and farm-mortgage associations. Helped the wealthy while ignoring individual suffering. Will Rogers mocked it as trickle-down.", 17], ["program", "Banking Act of 1933 / FDIC", "Created the Federal Deposit Insurance Corporation (insured deposits to $5,000) to prevent bank runs. Separated commercial from investment banking. Preceded by bank holiday; followed by first fireside chat.", 17], ["program", "CCC (Civilian Conservation Corps)", "Employed about 3 million young unemployed men in national parks and forests. One of the most popular New Deal programs.", 17], ["program", "WPA (Works Progress Administration)", "1935-1943. Employed at least 8.5 million people building public works and supporting artists and writers. Unemployment still never dropped below 10%.", 17], ["program", "NIRA / NRA", "National Industrial Recovery Act created the National Recovery Administration. Industries set codes for prices, wages, production. Blue eagle: We Do Our Part. Captured by big manufacturers. Struck down by Schechter (1935).", 17], ["program", "AAA (Agricultural Adjustment Admin.)", "Paid farmers to reduce production to raise commodity prices. Counterintuitive during a famine. Large producers benefited over small ones. Struck down by Supreme Court in 1936.", 17], ["program", "Social Security Act (1935)", "FDR's cornerstone of the New Deal. Retirement pensions funded by equal payroll taxes on BOTH worker and employer. Plus unemployment insurance and aid for disabled and dependent children. First direct federal-individual financial relationship.", 17], ["program", "Wagner Act (1935)", "National Labor Relations Act (Sen. Robert Wagner, NY). Guaranteed workers the right to organize and bargain collectively. Forbade employer interference. Created the NLRB.", 17], ["program", "Revenue Act of 1935 (Wealth Tax)", "Raised income taxes above $50,000 plus corporate, estate, and gift taxes. Hearst called it communism. Chamber of Commerce withdrew FDR endorsement. Raised little new revenue.", 17], ["program", "TVA (Tennessee Valley Authority)", "Government-subsidized electricity for the impoverished Tennessee Valley. Created jobs and modernized the region.", 17], ["concept", "Second New Deal / Second Hundred Days (1935)", "1935 legislative flood after Schechter. More radical than First New Deal: Social Security, Wagner Act, Revenue Act. Driven by pressure from Long, Townsend, and Coughlin on FDR's left.", 17], ["concept", "American Liberty League", "Bipartisan opposition group resisting New Deal executive power expansion. Led by both John W. Davis (1924 Democratic nominee) AND Al Smith (1928 Democratic nominee).", 17], ["concept", "Share Our Wealth Society", "Huey Long's 7.5 million-member organization. Proposed guaranteed annual income financed by taxing the rich. Most serious left-wing challenge to FDR before Long's assassination.", 17], ["concept", "Switch in Time That Saved Nine", "Two Supreme Court justices apparently altered their positions after FDR's court-packing threat - upholding the Wagner Act and Social Security Act. FDR won the outcome but paid a severe reputational cost.", 17], ["concept", "Conservative Coalition (1938)", "Alliance of Republicans and conservative southern Democrats controlling the House after 1938. Blocked further New Deal legislation for decades.", 17], ["concept", "Brain Trust", "FDR's team of policy experts including Raymond Moley. Had conflicting ideas (antitrust vs. government-business cooperation vs. wealth redistribution).", 17], ["concept", "Hoovervilles", "Makeshift shanty towns of cardboard and plywood housing unemployed Americans. Named mockingly after Hoover. Symbol of the Depression's human cost.", 17], ["concept", "Trickle-Down Economics (Will Rogers)", "Rogers: money trickles up, not down - give it to the top and the people at the top will have it before night, anyhow. Enduring critique of supply-side economics.", 17]];
+const QZ=[["What did Calvin Coolidge's father do after Harding's death?", ["Called Congress into emergency session", "Administered the presidential oath to Coolidge by kerosene lamp", "Sent a telegram to the Supreme Court", "Announced a period of national mourning"], 1, "Coolidge was at his family's Vermont farmhouse - no electricity or phone - when a messenger brought the news. His father, a justice of the peace, administered the oath at 2:47 AM by kerosene light."], ["Andrew Mellon argued that cutting taxes on the wealthy would paradoxically do what?", ["Reduce the national debt automatically", "Actually increase government revenues", "Cause temporary inflation", "Force Congress to reduce military spending"], 1, "Mellon argued that very high tax rates caused the wealthy to shelter capital, reducing actual revenue. Lower rates would encourage investment and paradoxically produce more tax revenue. He did halve the national debt from $33B to $16B."], ["Why does McClay criticize Frederick Lewis Allen's 'Only Yesterday'?", ["It was too favorable to Harding's scandals", "It was based on upper-class urban experience, not the whole country", "It ignored African American culture entirely", "It was written by the Creel Committee"], 1, "Allen's portrait of the 1920s was based on Fitzgerald's glamorous world and gargoyle journalism - not on writers like Indiana's Booth Tarkington, who depicted ordinary Midwesterners. A vivid but misleading first draft of history."], ["What made the Scopes trial textbook complicated for those drawing easy pro-science lessons?", ["It was written by Bryan himself", "It contained overtly racist and eugenicist arguments", "It had been banned in 12 states already", "It never mentioned Darwin's name"], 1, "George William Hunter's A Civic Biology argued that civilized white inhabitants of Europe and America were the highest race type and called for eugenics. This was in line with some of Bryan's concerns, complicating the simple pro-evolution narrative."], ["What was Will Rogers's critique of Hoover's RFC loans?", ["They came too late and lacked oversight", "Money trickles up, not down - so helping the wealthy would benefit them before anyone else", "The RFC was unconstitutional", "The interest rates were too high"], 1, "Rogers quipped that unlike water, money trickles up - give it to people at the top and the bottom won't see it: the people at the top will have it before night, anyhow."], ["Why did General MacArthur make the Bonus Army situation worse?", ["He arrested members of Hoover's cabinet", "He disobeyed Hoover's orders and drove directly into the encampment", "He gave out bonuses without Congressional approval", "He called Hoover unfit for command"], 1, "Hoover ordered MacArthur to stop outside the camp. MacArthur disobeyed and drove troops with tear gas and tanks directly into the Anacostia Flats encampment. The image of soldiers dispersing American veterans was fatal to Hoover's public image."], ["What was Oliver Wendell Holmes's famous assessment of FDR?", ["A first-class demagogue with a third-class conscience", "A second-class intellect, but a first-class temperament", "The best mind since Jefferson applied to the worst crisis since Lincoln", "All charm, no conviction"], 1, "Supreme Court Justice Holmes said FDR possessed a second-class intellect, but a first-class temperament. Given a Depression nobody fully understood, the author argues that a first-class temperament was the more valuable asset."], ["What programs were struck down by the Supreme Court before the Second New Deal?", ["TVA and FDIC", "NIRA and AAA", "CCC and WPA", "Social Security and the Wagner Act"], 1, "Schechter Poultry v. United States (1935) struck down the NIRA; the Supreme Court also struck down the AAA's processing tax funding mechanism. These defeats gave FDR the political opening for the Second New Deal."], ["What made the Social Security Act distinctly American in its design?", ["It was the world's most generous pension", "Workers AND employers paid equal contributions so recipients would not feel like charity cases", "It was funded entirely by corporate taxes", "It was only available to workers employed for 30+ years"], 1, "FDR insisted the program be funded by equal payroll taxes on workers and employers - not from general Treasury funds. Recipients would feel they had earned and paid into the system, not received a gift."], ["What did Huey Long's Share Our Wealth program promise?", ["Free college tuition funded by oil taxes", "A guaranteed annual income financed by taxing personal fortunes of the rich", "Direct payments to WWI veterans", "Government ownership of farms over 500 acres"], 1, "Long proposed a guaranteed annual income financed by a net assets tax on personal fortunes of the rich. His Share Our Wealth Society grew to 7.5 million members and represented a genuine threat to FDR."], ["What were Hoovervilles?", ["Hoover's campaign offices in 1928", "Makeshift shanty towns of cardboard and plywood for displaced workers", "Tent cities for WWI veterans seeking bonuses", "Government soup kitchens"], 1, "Hoovervilles were makeshift shanty towns where unemployed Americans lived as the Depression deepened and they lost their homes. The mocking name captured contempt for Hoover's refusal to authorize direct federal relief."], ["What was the switch in time that saved nine?", ["Nine senators switching sides to defeat the court-packing bill", "Two Supreme Court justices changing positions after FDR's court-packing threat, upholding the Wagner Act and Social Security", "FDR reducing his court-packing bill from 15 to 9 justices", "The nine states that broke with FDR in 1936"], 1, "After FDR's court-packing attempt, two justices seemed to shift their positions - suddenly upholding the Wagner Act and Social Security Act. FDR got the outcome but paid a severe reputational price for the attempt."], ["What caused the Roosevelt Recession of 1937?", ["A second stock market crash", "FDR's budget cuts plus the $2B Social Security payroll tax drain plus business fears of New Deal regulation", "A severe Midwest drought", "Collapse of the WPA construction program"], 1, "The 1937 recession resulted from FDR's budget-cutting, the drain of Social Security payroll taxes on consumer purchasing power, and business anxiety over the cumulative effects of the Wagner Act."], ["What was the Butler Act?", ["Hoover's bill creating the RFC", "Tennessee's law banning the teaching of evolution, challenged in the Scopes Trial", "The legislation authorizing Bonus Army payment", "The tariff act that preceded Hawley-Smoot"], 1, "The Butler Act was Tennessee's law banning teaching of Darwinian evolution in public schools. John Scopes deliberately violated it to create a test case, leading to the famous 1925 trial."], ["Who sponsored the National Labor Relations Act of 1935?", ["Harold Ickes", "Harry Hopkins", "Robert Wagner of New York", "Hugh Johnson"], 2, "The Wagner Act was sponsored by Senator Robert Wagner of New York. It guaranteed workers the right to organize and bargain collectively, forbade employer interference, and created the NLRB."], ["Which person is correctly matched with their Harding-era scandal role?", ["Daugherty leased oil reserves", "Forbes released German assets", "Fall ran the Veterans Bureau", "Fall leased Teapot Dome and Elk Hills"], 3, "Albert Fall was the interior secretary who leased Teapot Dome (WY) and Elk Hills (CA) oil reserves for a $400,000 bribe. Forbes ran the Veterans Bureau (thefts and mismanagement); Daugherty fraudulently released German wartime assets."], ["KDKA Pittsburgh's historical significance is that it was...", ["The station that broadcast FDR's first fireside chat in 1933", "The first broadcast radio station in the U.S., debuting in 1920", "The developer of the talking picture technology", "Seized by the government during Prohibition"], 1, "KDKA Pittsburgh was the first broadcast radio station in the U.S., beginning operation in 1920 carrying that year's presidential election returns as its inaugural broadcast."], ["What was the result of the 1938 midterm elections for the New Deal?", ["Democrats gained 20 seats expanding FDR's mandate", "Democrats lost 6 Senate seats and 71 House seats and the conservative coalition controlled the House", "Republicans won a Senate majority for the first time since 1929", "FDR used the results to expand the executive branch"], 1, "Democrats lost 6 Senate seats, 71 House seats, and 12 governorships. The conservative coalition of Republicans and conservative Democrats took effective control of the House. Arthur Krock declared: The New Deal has been halted."], ["What ultimately ended the Great Depression?", ["The Social Security Act restoring consumer confidence in 1936", "The 1938 conservative coalition reversing harmful policies", "World War II mobilization", "The Federal Reserve reversing its money contraction"], 2, "The book explicitly states that Roosevelt's policies had not returned the country to full employment. It would take, not the moral equivalent of war, but war itself to accomplish that. WWII mobilization ended unemployment."], ["Why did Prohibition end up damaging respect for the law itself?", ["Because courts ruled enforcement unconstitutional in 1928", "By creating laws that a significant minority was disinclined to obey and could never be adequately enforced", "Because the 18th Amendment was poorly worded", "Because it was passed without proper state ratification"], 1, "McClay argues Prohibition's deeper damage was creating laws that a significant minority was disinclined to obey, laws which moreover could never be adequately enforced - teaching millions of Americans that selective law-breaking was acceptable."]];
+const MT=[["Albert Fall", "Interior secretary who leased Teapot Dome and Elk Hills oil reserves for a $400,000 bribe"], ["Associationalism", "Hoover's philosophy of voluntary cooperation between business and government"], ["Blue Eagle", "Symbol of NRA-cooperating businesses under Gen. Hugh Johnson"], ["Butler Act", "Tennessee law banning the teaching of evolution; challenged in the Scopes Trial"], ["FDIC", "New Deal agency that insured bank deposits up to $5,000 to prevent bank runs"], ["Share Our Wealth", "Huey Long's program promising a guaranteed income financed by taxing the rich"], ["Hawley-Smoot Tariff", "1930 law that raised duties on 1,000+ items and triggered European retaliation"], ["Return to Normalcy", "Harding's 1920 slogan promising relief from postwar chaos"], ["Wagner Act", "1935 law guaranteeing workers the right to organize and bargain collectively"], ["RFC", "Hoover's emergency loan program for banks and railroads, mocked as trickle-down by Will Rogers"], ["Gargoyle Journalism", "Kenneth S. Lynn's phrase for sensational, upper-class-based 1920s media depictions"], ["Schechter Poultry Case", "1935 Supreme Court decision that struck down the NIRA as unconstitutional"], ["Bonus Army", "43,000 marchers, including 17,000 WWI veterans, who camped in Washington demanding early bonus payment"], ["Switch in Time That Saved Nine", "Phrase describing two justices who shifted positions after FDR's court-packing attempt"], ["Social Security Act", "FDR's cornerstone program funded by equal payroll taxes on worker and employer"], ["Teapot Dome", "Wyoming oil reserve secretly leased by Albert Fall in exchange for a bribe"], ["Fireside Chats", "FDR's radio addresses that explained New Deal policies in intimate, accessible terms"], ["TVA", "New Deal agency that brought government electricity to the impoverished Tennessee Valley"], ["Coolidge Prosperity", "The 42% economic growth of the 1920s, built partly on credit and speculation"], ["Conservative Coalition", "Post-1938 alliance of Republicans and conservative Democrats that halted the New Deal"]];
+
+function showV(id,btn){
+  document.querySelectorAll('.view').forEach(e=>e.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(e=>e.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  if(id==='tv')buildTL();
+  if(id==='fv')initFC();
+  if(id==='qv')initQ();
+  if(id==='mv')newMatch();
+}
+
+// ---- TIMELINE ----
+let tlf='all';
+function buildTL(){
+  const d=document.getElementById('tlist');
+  d.innerHTML='';
+  TL.forEach(([yr,ti,ds,tag])=>{
+    const el=document.createElement('div');
+    el.className='titem';el.dataset.tag=tag;
+    if(tlf!=='all'&&!tag.includes(tlf))el.style.display='none';
+    const tags=tag.split(',');
+    el.innerHTML=`<div class="tyear">${yr}</div><div class="ttitle">${ti}</div><div class="tdesc">${ds}</div><div>${tags.map(t=>`<span class="ttag ${t}">${t}</span>`).join('')}</div>`;
+    d.appendChild(el);
+  });
+}
+function filterTL(t,btn){
+  tlf=t;
+  document.querySelectorAll('#tv .cat-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.titem').forEach(el=>{
+    const tags=el.dataset.tag.split(',');
+    el.style.display=(t==='all'||tags.includes(t))?'':'none';
+  });
+}
+
+// ---- FLASHCARDS ----
+let deck=[...FC],fi=0,flipStart=0,weakSet=new Set();
+function filterFC(type,btn){
+  document.querySelectorAll('#fv .fc-cats .cat-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(type==='weak'){deck=FC.filter(c=>weakSet.has(c[1]));if(!deck.length){deck=[...FC];}}
+  else{deck=type==='all'?[...FC]:FC.filter(c=>c[0]===type);}
+  fi=0;renderFC();
+}
+function initFC(){deck=[...FC];fi=0;renderFC();updateWC();}
+function renderFC(){
+  if(!deck.length)return;
+  const [t,term,def,ch]=deck[fi];
+  document.getElementById('fccard').classList.remove('flipped');
+  const label=t.charAt(0).toUpperCase()+t.slice(1);
+  document.getElementById('fct').textContent=label;
+  document.getElementById('fcbt').textContent=label;
+  document.getElementById('fcterm').textContent=term;
+  document.getElementById('fcdef').textContent=def;
+  document.getElementById('fcch').textContent='Chapter '+ch;
+  document.getElementById('fcp').textContent=(fi+1)+' / '+deck.length;
+  flipStart=Date.now();
+  document.getElementById('fc-conf').style.display='none';
+  document.querySelector('.fc-weak').classList.remove('suggested');
+}
+function flipFC(){
+  const card=document.getElementById('fccard');
+  card.classList.toggle('flipped');
+  if(card.classList.contains('flipped')){
+    document.getElementById('fc-conf').style.display='';
+    if(Date.now()-flipStart>4000)document.querySelector('.fc-weak').classList.add('suggested');
+  } else {document.getElementById('fc-conf').style.display='none';}
+}
+function fcKnow(){fi=(fi+1)%deck.length;renderFC();}
+function fcWeak(){
+  const cur=deck[fi];weakSet.add(cur[1]);
+  if(fi<deck.length-1){if(!deck.slice(fi+1).includes(cur))deck.push(cur);}
+  else{deck.push(cur);}
+  updateWC();fi=(fi+1)%deck.length;renderFC();
+}
+function updateWC(){
+  const el=document.getElementById('fcwc'),btn=document.getElementById('fcWeakBtn');
+  if(weakSet.size>0){el.textContent=weakSet.size+' weak card'+(weakSet.size>1?'s':'')+' queued for review';el.style.display='';btn.style.display='';}
+  else{el.style.display='none';btn.style.display='none';}
+}
+function nextFC(){fi=(fi+1)%deck.length;renderFC();}
+function prevFC(){fi=(fi-1+deck.length)%deck.length;renderFC();}
+function shuffleFC(){
+  for(let i=deck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[deck[i],deck[j]]=[deck[j],deck[i]];}
+  fi=0;renderFC();
+}
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('fv').classList.contains('active'))return;
+  if(e.key==='ArrowRight')nextFC();
+  if(e.key==='ArrowLeft')prevFC();
+  if(e.key===' '){e.preventDefault();flipFC();}
+});
+
+// ---- MATCHING ----
+let mSel=null, mMatched=0, mPairs=[], mSelType=null;
+function newMatch(){
+  mSel=null;mMatched=0;mSelType=null;
+  const sh=[...MT].sort(()=>Math.random()-.5).slice(0,10);
+  mPairs=sh;
+  const terms=[...sh].sort(()=>Math.random()-.5);
+  const defs=[...sh].sort(()=>Math.random()-.5);
+  const td=document.getElementById('mterms');
+  const dd=document.getElementById('mdefs');
+  td.innerHTML='';dd.innerHTML='';
+  terms.forEach(([term,def])=>{
+    const el=document.createElement('div');
+    el.className='m-item';el.dataset.val=term;el.dataset.side='term';
+    el.textContent=term;
+    el.onclick=()=>selectM(el,'term',term);
+    td.appendChild(el);
+  });
+  defs.forEach(([term,def])=>{
+    const el=document.createElement('div');
+    el.className='m-item';el.dataset.val=term;el.dataset.side='def';
+    el.textContent=def;
+    el.onclick=()=>selectM(el,'def',term);
+    dd.appendChild(el);
+  });
+  document.getElementById('mscore').textContent='0 / 10 matched';
+  document.getElementById('mfeedback').textContent='';
+}
+function selectM(el,side,val){
+  if(el.classList.contains('matched'))return;
+  if(mSel===null){
+    mSel=val;mSelType=side;
+    el.classList.add('selected');
+  } else {
+    if(mSelType===side){
+      // same side — switch selection
+      document.querySelectorAll('.m-item.selected').forEach(e=>e.classList.remove('selected'));
+      mSel=val;mSelType=side;
+      el.classList.add('selected');
+      return;
+    }
+    // different sides — check if match
+    if(mSel===val){
+      // correct!
+      document.querySelectorAll('.m-item.selected').forEach(e=>{e.classList.remove('selected');e.classList.add('matched');});
+      el.classList.add('matched');
+      mMatched++;
+      document.getElementById('mscore').textContent=mMatched+' / 10 matched';
+      document.getElementById('mfeedback').textContent=mMatched===10?'Perfect! New round?':'';
+    } else {
+      // wrong — flash red then clear
+      document.querySelectorAll('.m-item.selected').forEach(e=>e.classList.add('wrong'));
+      el.classList.add('wrong');
+      setTimeout(()=>{
+        document.querySelectorAll('.m-item.wrong').forEach(e=>e.classList.remove('wrong'));
+        document.querySelectorAll('.m-item.selected').forEach(e=>e.classList.remove('selected'));
+        el.classList.remove('selected');
+      },600);
+    }
+    mSel=null;mSelType=null;
+  }
+}
+
+// ---- QUIZ ----
+let qs=0,qa=0;
+function initQ(){
+  qs=0;qa=0;
+  document.getElementById('qres').classList.remove('show');
+  document.getElementById('sfill').style.width='0%';
+  document.getElementById('qcon').style.display='';
+  const con=document.getElementById('qcon');
+  con.innerHTML='';
+  const sh=[...QZ].sort(()=>Math.random()-.5);
+  sh.forEach(([q,opts,ans,exp],i)=>{
+    const d=document.createElement('div');
+    d.className='qq'+(i===0?' active':'');
+    const sOpts=opts.map((o,oi)=>({t:o,o:oi})).sort(()=>Math.random()-.5);
+    const na=sOpts.findIndex(o=>o.o===ans);
+    d.innerHTML=`<div class="qnum">Question ${i+1} of ${sh.length}</div>
+<div class="qtext">${q}</div>
+<div class="qopts">${sOpts.map((o,j)=>`<button class="qopt" onclick="ansQ(this,${j},${na},${i})">${o.t}</button>`).join('')}</div>
+<div class="qexp" id="xe${i}">${exp}</div>
+<div class="qctrl"><button class="abtn" onclick="nextQ(${i},${sh.length})" style="display:none" id="nq${i}">Next &#8594;</button></div>`;
+    con.appendChild(d);
+  });
+}
+function ansQ(btn,c,a,i){
+  const q=btn.closest('.qq');
+  q.querySelectorAll('.qopt').forEach(b=>b.disabled=true);
+  if(c===a){btn.classList.add('correct');qs++;}
+  else{btn.classList.add('wrong');q.querySelectorAll('.qopt')[a].classList.add('correct');}
+  qa++;
+  document.getElementById('xe'+i).classList.add('show');
+  document.getElementById('nq'+i).style.display='';
+  document.getElementById('sfill').style.width=(qa/QZ.length*100)+'%';
+}
+function nextQ(i,tot){
+  document.querySelectorAll('.qq').forEach((e,j)=>e.classList.toggle('active',j===i+1));
+  if(i+1>=tot)showR();
+}
+function showR(){
+  document.getElementById('qcon').style.display='none';
+  document.getElementById('qres').classList.add('show');
+  document.getElementById('rsc').textContent=qs+'/'+QZ.length;
+  const p=qs/QZ.length;
+  let m;
+  if(p>=.9)m='Excellent! You have mastered the material from Chapters 16 and 17.';
+  else if(p>=.75)m='Strong work. Review the flashcards for the questions you missed.';
+  else if(p>=.6)m='Solid foundation. A review pass through key people and events would help.';
+  else m='Use the Review tab to revisit key people, events, and concepts before retrying.';
+  document.getElementById('rmsg').textContent=m;
+}
+function resetQ(){document.getElementById('qcon').style.display='';initQ();}
+
+</script></body></html>
